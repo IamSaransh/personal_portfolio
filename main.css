@@ -17,8 +17,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color:#ef0d33;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #18191b  /* creates padding around scroll thumb */
-    overflow: hidden;
+    border: 3px solid #18191b ; /* creates padding around scroll thumb */
+    overflow-x:hidden;
     overflow-y:hidden;
 }
 /*scrollbar custom end */
@@ -31,7 +31,7 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url(images/sitebg4.jpg) no-repeat center fixed;
+    background: url(images/sitebg.jpg) no-repeat center fixed;
     background-size: cover; 
 }
 section{
@@ -674,7 +674,7 @@ svg{
     /*svg start*/
 svg{
     
-    width: 375px;
+    width: 300px;
 }
 #logo{
     position: absolute;
@@ -707,7 +707,11 @@ svg{
         flex-direction: column;
     }
     .portfolio-img{
-        margin: 0 0 2rem 0;
+        width:100%;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        margin: 0 auto 2rem auto;
         order: 1;
     }
     .portfolio-description{
