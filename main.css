@@ -1,4 +1,10 @@
 /*Start global*/
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -146,7 +152,7 @@ svg{
     right: -10%;
     width: 45vw;
     height: 45vw;
-    opacity: 30%;
+    opacity: 40%;
     background: radial-gradient(transparent 65%, #ff0488 100%),
       linear-gradient(#ffcb55 0, #ff0488 100%);
     border-radius: 50%;
@@ -242,18 +248,18 @@ li{
 }
 .bar.start{
     transform-origin: right;
-    transition: transform 650ms cubic-bezier(0.54, -.81, 0.57, 0.57);
+    transition: transform 760ms cubic-bezier(0.54, -.81, 0.57, 0.57);
 }
 .open .bar.start{
-    transform: rotate(-630deg) translateX(0.8rem);
+    transform: rotate(810deg) translateX(0.8rem);
 }
 .bar.end{
     align-self: flex-end;
     transform-origin: left;
-    transition: transform 650ms cubic-bezier(0.54, -.81, 0.57, 0.57);
+    transition: transform 750ms cubic-bezier(0.54, -.81, 0.57, 0.57) 100ms;
 }
 .open .bar.end{
-    transform: rotate(-630deg) translateX(-0.8rem);
+    transform: rotate(810deg) translateX(-0.8rem);
 }
 .landing-text{
     position: absolute;
