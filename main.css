@@ -1,4 +1,5 @@
-/*Start global*/
+
+/*preload properties*/
 .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
@@ -24,8 +25,7 @@ body::-webkit-scrollbar-thumb {
     background-color:#ef0d33;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid #18191b ; /* creates padding around scroll thumb */
-    overflow-x:hidden;
-    overflow-y:hidden;
+    
 }
 /*scrollbar custom end */
 
@@ -37,8 +37,11 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url(images/sitebg.jpg) no-repeat center fixed;
+    background-color:black;
+    background: url(images/background.svg) no-repeat center fixed;
     background-size: cover; 
+overflow-x:hidden;
+    
 }
 section{
     padding: 6rem 0;
@@ -209,7 +212,7 @@ li{
 }
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #ff0084, #dc2430);
     background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
@@ -327,8 +330,8 @@ li{
     font-size: 5rem;
     transition: color 650ms;
 }
-.fa-facebook-square:hover{
-    color:#4267b2;
+.fa-quora:hover{
+    color:#b92b27;
     transform: translateY(-.5rem);
     transition: transform 65ms ease-in;
 }
@@ -341,7 +344,7 @@ li{
     -webkit-text-fill-color:transparent; 
 }
 .fa-github:hover{
-    color: #000000;
+    color: rgb(70, 65, 65);
     transform: translateY(-.5rem);
     transition: transform 65ms ease-in;
 }
@@ -437,11 +440,12 @@ li{
 
 /*Start timeline*/
 .timeline ul{
-    border-left: 4px solid yellow;
+    border-left: 4px solid white;
     border-radius: .8rem;
     background-color: rgba(0,0,0,0.05);
     margin: 0 auto;
     padding: 5rem;
+    margin-left: 8rem;
     list-style: none;
     text-align: left;
 }
@@ -482,10 +486,10 @@ li{
 }
 .timeline .date::after{
     content: "";
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px rgb(239,13,51);
     border-radius: 100%;
     left: -7.9rem;
-    background-color: #7bb1a3;
+    background-color: #000;
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -515,7 +519,7 @@ textarea{
 }
 input[type="submit"]{
     /*width: initial; to make button small*/
-    background-color: #d6249f;
+    background-color: rgb(239,13,51);
     padding: 1rem 2rem;
     color: #eee;
     border-radius: 0.8rem;
@@ -523,7 +527,7 @@ input[type="submit"]{
     transition: background 650ms;
 }
 input[type="submit"]:hover{
-    background-color: #ffe838;
+    background-color:#d6249f ;
     color: #221e3f;
 }
 
@@ -585,7 +589,7 @@ input[type="submit"]:hover{
 body{
     width: 100%;
     height: 100%;
-    background: url(images/sitebg2.jpg) no-repeat center fixed;
+    background: url(images/background2.svg) no-repeat center fixed;
     background-size: cover; 
 }
 
@@ -640,7 +644,7 @@ svg{
 
     }
     .timeline ul{
-        margin: 0 0 0 auto;
+        margin: 0 0 0 10rem;
     }
     .timeline .date::before{
         left: -20rem;

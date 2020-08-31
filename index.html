@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
     
 </head>
-<body  >
+<body class="content" >
     <header>
         
         <div class="menu-toggler">
@@ -114,6 +114,15 @@
                 
         
     </header>
+    <script>
+        document.body.classList.add('js-loading');
+
+        window.addEventListener("load", showPage);
+
+        function showPage() {
+        document.body.classList.remove('js-loading');
+        }
+    </script>
 
     <section class="about" id="about">
         <div class="container">
@@ -125,30 +134,27 @@
                     <h6>Myself</h6>
                     <h1>About</h1>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                 Nesciunt reprehenderit voluptate hic molestias asperiores
-                  consequatur beatae nostrum cupiditate, autem ipsa distinct
-                  io eveniet, sit pariatur ea, omnis animi cum quam aliquid.
+                <p>Hello, my name is Saransh. I am a UI Designer / Full Stack Web Developer living in Jaipur.
                 </p>
                 <div class="social-media">
                     <div class="nav-list">
                         <li>
-                            <a href="#" class="icon-link">
-                                <i class="fab fa-facebook-square"></i>
+                            <a href="https://www.quora.com/profile/Saransh-Vashistha-2" class="icon-link">
+                                <i class="fab fa-quora"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-link">
+                            <a href="https://www.instagram.com/sarnsh_13/" class="icon-link">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-link">
+                            <a href="https://github.com/sonny1314" class="icon-link">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-link">
+                            <a href="https://www.linkedin.com/in/saransh-vashistha-bb7948154/" class="icon-link">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
@@ -171,9 +177,7 @@
                         <i class="fas fa-drafting-compass"></i>
                     </div>
                     <h1>Web Design</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, culpa? Blanditiis laudantium, 
-                        et voluptates fugiat quam tempore suscipit necessitatibus dignissimos dicta magnam. Labore eaque 
-                        nihil praesentium minima. Quae, necessitatibus! Molestiae
+                    <p>I value simple content structure, clean design patterns, and thoughtful interactions.
                     </p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
@@ -181,20 +185,15 @@
                         <i class="fas fa-code"></i>
                     </div>
                     <h1>Web Development</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, culpa? Blanditiis laudantium, 
-                        et voluptates fugiat quam tempore suscipit necessitatibus dignissimos dicta magnam. Labore eaque 
-                        nihil praesentium minima. Quae, necessitatibus! Molestiae
-                        !</p>
+                    <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="400">
                     <div class="icon-container">
                         <i class="fab fa-node"></i>
                     </div>
                     <h1>Back-end Dev</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, culpa? Blanditiis laudantium, 
-                        et voluptates fugiat quam tempore suscipit necessitatibus dignissimos dicta magnam. Labore eaque 
-                        nihil praesentium minima. Quae, necessitatibus! Molestiae
-                        !</p>
+                    <p>I like to create simple yet eegant solutions for the backend, NodeJs is the language I speak.
+                        </p>
                 </div>
             </div>
             
@@ -215,10 +214,9 @@
                 <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
                     <h6>Building high fidelity wireframes</h6>
                     <h1>Web Design</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio sint aspernatur consectetur sed aliquid 
-                        explicabo accusamus corrupti impedit,
+                    <p>I have worked with Caramel IT services to design their dashboard UI and I've also worked on several other personal projects. Check Them Out!
                     </p>
-                    <a href="https://github.com/Sonny1314/UI-UX-designes/blob/master/README.md" class="cta">View My samples</a> 
+                    <a href="https://github.com/Sonny1314/UI-UX-designes/blob/master/README.md" class="cta">View My Wireframes</a> 
                 </div>
             </div>
             
@@ -226,8 +224,7 @@
                 <div class="portfolio-description has-margin-right"  data-aos="fade-right" data-aos-delay="500">
                     <h6>Back-end services</h6>
                     <h1>Node JS</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio sint aspernatur consectetur sed aliquid 
-                        explicabo accusamus corrupti impedit,
+                    <p>Built the Back-end of Musical Strings(e-commerce plateform for musical instrumets), using Node Js.
                     </p>
                     <a href="https://drive.google.com/drive/folders/17fBavcNtV5SyqCkGbYRHSGFg-AvfXMkC?usp=sharing" class="cta">View Sample</a> 
                 </div>
@@ -243,10 +240,9 @@
                 <div class="portfolio-description"  data-aos="fade-left" data-aos-delay="900">
                     <h6>Building professional looking websites</h6>
                     <h1>Web development</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio sint aspernatur consectetur sed aliquid 
-                        explicabo accusamus corrupti impedit,
+                    <p>I love to speak the language of the browser and make it do some beautiful things, that will surely engage your users. 
                     </p>
-                    <a href="https://github.com/Sonny1314?tab=repositories" class="cta">View Details</a> 
+                    <a href="https://github.com/Sonny1314?tab=repositories" class="cta">Check My Work !</a> 
                 </div>
             </div>    
         </div>
@@ -262,11 +258,11 @@
                 <ul>
                     <li class="date" data-date="June-August">
                         <h1>Verzeo</h1>
-                        <p>Part of a training program to learn abouut web dev and implement it</p>
+                        <p>Enrolled in a training program in web Development as part of my summer internship. Learned hands on about latest web based teconologies like Node, ReactJS, AJAX, JQuery and worked on them </p>
                     </li>
                     <li class="date" data-date="June-July">
                         <h1>Caramel IT services</h1>
-                        <p>worked as front end intern to gamify thrie test module and build admin and user dashboard</p>
+                        <p>Worked as front end intern as part of Summer internship to gamify their test module with a working front End Dashboards of both User as well as Admin.</p>
                     </li>
                     
                 </ul>
