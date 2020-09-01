@@ -1,7 +1,12 @@
 $(document).ready(function () {
 
     
-   
+   //http://172.30.136.25:8090/ssssportal/fupRedirection.do
+   //https://fuptopup.bsnl.co.in/
+   //sa1442940275_nid@ftth.bsnl.in
+
+
+   //https://web.eduthrill.com/app/welcome
 
  
    
