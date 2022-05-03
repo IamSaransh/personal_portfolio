@@ -1,4 +1,5 @@
 # personal_portfolio
-My portfolio website
-# www.saransh13.me (demo)
+My portfolio website 
+# https://iamsaransh.github.io/personal_portfolio/ (demo)
+### www.saransh13.me (curently down)
 
